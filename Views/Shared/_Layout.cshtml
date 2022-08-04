@@ -12,6 +12,7 @@
 @{
     string controller = "";
     string action = "";
+    string year = DateTime.Now.Year.ToString();
     if (ViewContext.RouteData.Values["controller"] != null)
     {
         controller = ViewContext.RouteData.Values["controller"].ToString();
@@ -64,7 +65,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - Todos
+            &copy; @year - Todos
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
