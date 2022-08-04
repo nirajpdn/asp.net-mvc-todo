@@ -51,7 +51,7 @@
         <p>Controller : @controller | Action : @action</p>
 
         <main role="main" class="pb-3">
-            @if (@controller.ToLower() != "todo" && @action.ToLower() != "index")
+            @if (@action != "Index")
             {
                 <div class="mb-4">
                     <a asp-controller="Todo" class="btn btn-secondary" asp-action="Index">
