@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Create Todo";
+}
+@model TodoModel;
+
+<h1>Create</h1>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+
+            <div class="card-body">
+                <form asp-controller="Todo" asp-action="CreateTodo" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Id
+                        </label>
+                        <input asp-for="Id" type="number" class="form-control" min="0" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Name
+                        </label>
+                        <input asp-for="Name" type="text" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Duration
+                        </label>
+                        <input asp-for="Duration" min="0" type="number" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary btn-block">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

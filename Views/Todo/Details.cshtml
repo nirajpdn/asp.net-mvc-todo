@@ -1,0 +1,26 @@
+@model TodoModel;
+@{
+    ViewData["Title"] = @Model.Name + " Details";
+}
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h1>Details</h1>
+            </div>
+            <div class="card-body">
+                <h5>
+                    Id: @Model.Id
+                </h5>
+                <h5>
+                    Name: @Model.Name
+                </h5>
+                <h5>
+                    Duration: @Model.Duration
+                </h5>
+
+            </div>
+        </div>
+    </div>
+</div>
